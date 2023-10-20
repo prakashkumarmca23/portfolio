@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><span>P</span>ra<span>K</span>ash</a>
+        <div id="menu-icon" onclick="toggleMenu()">
+            <i class="bx bx-menu"></i>
+        </div>
+        <ul class="navlist" id="navlist">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+
+
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <div class="slide">
+                <span class="one">Hello</span>
+                <span class="two">I'm</span>
+            </div>
+            <h1>Prakash</h1>
+            <h3>Web<span>Developer.</span></h3>
+            <p>I'm a dedicated MCA student who loves working with<br>
+                software and enjoys solving tough problems</p>
+        </div>
+    </section>
+    
+    <section class="about" id="about">
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <h4>Web Developer</h4>
+            <p>
+                <p>"I'm a dedicated MCA student who loves working with software and enjoys solving tough problems.
+                    I enjoy taking on challenges, always looking for creative solutions through hands-on projects.
+                    I have a good grasp of programming, and I'm eager to keep learning.
+                    I'm excited to be part of the ever-changing tech world and use my skills to contribute!"</p>
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="./img/IMG_20231014_150611-removebg-preview.jpg" alt="Passport Size Image">
+            <div class="button">
+                <a href="./img/RESUME PRAKASH KUMAR.pdf" download="PRAKASH KUMAR.pdf" class="btn">download cv</a>
+                <div id="playVideo" class="btn2"><span><i class="bx bx-play"></i></span>Play Video</div>
+            </div>
+        </div>
+
+        <div id="videoModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" id="closeModal" onclick="closeModal()">&times;</span>
+                <iframe id="videoFrame" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- The modal container -->
+
+
+    <section class="education" id="education">
+        <div class="containerss mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="progress-title">HTML5</h3>
+                    <div class="progress custom-progress animate-progress">
+                        <div class="progress-bar" role="progressbar" style="width: 65%; background: #ff9900;">
+                            <div class="progress-value">65%</div>
+                        </div>
+                    </div>
+
+                    <h3 class="progress-title">CSS3</h3>
+                    <div class="progress custom-progress animate-progress">
+                        <div class="progress-bar" role="progressbar" style="width: 87%; background: #ff9900 ;">
+                            <div class="progress-value">87%</div>
+                        </div>
+                    </div>
+
+                    <h3 class="progress-title">JAVASCRIPT</h3>
+                    <div class="progress custom-progress animate-progress">
+                        <div class="progress-bar" role="progressbar" style="width: 60%; background: #ff9900;">
+                            <div class="progress-value">50%</div>
+                        </div>
+                    </div>
+
+                    <h3 class="progress-title">JAVA</h3>
+                    <div class="progress custom-progress animate-progress">
+                        <div class="progress-bar" role="progressbar" style="width: 70%; background: #ff9900;">
+                            <div class="progress-value">50%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <div class="swiper mySwiper" id="projects">
+        <div class="swiper-wrapper">
+
+            <div class="card swiper-slide reveal">
+                <div class="card__image">
+                    <img src="./img/ball1.jpg" alt=""
+                        onclick="window.location.href='https://prakashkumarmca23.github.io/ball_movement/'">
+                    <div class="play-icon" onclick="runProject('https://prakashkumarmca23.github.io/ball_movement/')">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="card__content">
+                    <span class="card_title">BALL MOVEMENT</span>
+                    <p class="card__text">
+                        This web page showcases a bouncing ball within a square boundary, demonstrating HTML, CSS, and JavaScript integration for interactive web content.</p>
+                    <button class="card__btn"><a
+                            href="https://github.com/prakashkumarmca23/ball_movement">Code</a></button>
+                </div>
+            </div>
+
+            <div class="card swiper-slide reveal">
+                <div class="card__image">
+                    <img src="./img/randomball2.jpg" alt=""
+                        onclick="window.location.href='https://prakashkumarmca23.github.io/random_ball/'">
+                    <div class="play-icon" onclick="runProject('https://prakashkumarmca23.github.io/random_ball/')">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="card__content">
+                    <span class="card_title">RANDOM BALL</span>
+                    <p class="card__text">
+                        This project showcases animated colorful balls within a container, illustrating JavaScript's setInterval for dynamic updates and interactive wall interactions</p>
+                    <button class="card__btn"><a
+                            href="https://github.com/prakashkumarmca23/random_ball">Code</a></button>
+
+                </div>
+            </div>
+
+            <div class="card swiper-slide reveal">
+                <div class="card__image">
+                    <img src="./img/pacman.png" alt=""
+                        onclick="window.location.href='https://prakashkumarmca23.github.io/pac_man/'">
+                    <div class="play-icon" onclick="runProject('https://prakashkumarmca23.github.io/pac_man/')">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="card__content">
+                    <span class="card_title">PAC MAN</span>
+                    <p class="card__text">
+                        The PacMan Animation project brings the classic character to life, allowing interactive movement within a designated container using HTML and JavaScript.</p>
+                    <button class="card__btn"><a href="https://github.com/prakashkumarmca23/pac_man">Code</a></button>
+
+                </div>
+            </div>
+
+            <div class="card swiper-slide reveal">
+                <div class="card__image">
+                    <img src="./img/bostoncity.avif" alt=""
+                        onclick="window.location.href='https://prakashkumarmca23.github.io/boston/'">
+                    <div class="play-icon" onclick="runProject('https://prakashkumarmca23.github.io/boston/')">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+
+                <div class="card__content">
+                    <span class="card_title">BOSTON CITY</span>
+                    <p class="card__text">This JavaScript program sorts Boston-related data and calculates yearly income based on defined conditions, providing top entries based on specific criteria.</p>
+                    <button class="card__btn"><a href="https://github.com/prakashkumarmca23/boston">Code</a></button>
+
+                </div>
+            </div>
+
+            <div class="card swiper-slide reveal">
+                <div class="card__image">
+                    <img src="./img/tuxpi.com.1697294964.jpg" alt=""
+                        onclick="window.location.href=' https://prakashkumarmca23.github.io/wordcount/'">
+                    <div class="play-icon" onclick="runProject('https://prakashkumarmca23.github.io/wordcount/')">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+
+                <div class="card__content">
+                    <span class="card_title">WORD COUNT</span>
+                    <p class="card__text">This HTML document displays the top 3 most frequently occurring words
+                         from a provided paragraph after removing punctuation and converting all text to lowercase.</p>
+                    <button class="card__btn"><a href="https://github.com/prakashkumarmca23/wordcount">Code</a></button>
+
+                </div>
+            </div>
+
+            <div class="card swiper-slide reveal">
+                <div class="card__image">
+                    <img src="./img/randompacman.2jpg.jpg" alt="" onclick="window.location.href='https://prakashkumarmca23.github.io/randomPacman/'">
+                    <div class="play-icon" onclick="runProject('https://prakashkumarmca23.github.io/randomPacman/')">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+
+                <div class="card__content">
+                    <span class="card_title">RANDOM PAC MAN</span>
+                    <p class="card__text">The HTML document creates a basic Pac-Man game with randomly generated Pac-Man characters that bounce
+                         off the container</p>
+                    <button class="card__btn"><a
+                            href="https://github.com/prakashkumarmca23/randomPacman">Code</a></button>
+
+                </div>
+            </div>
+
+            <div class="card swiper-slide reveal">
+                <div class="card__image">
+                    <img src="./img/eyeball.jfif" alt="" onclick="window.location.href='https://prakashkumarmca23.github.io/eyeball/'" >
+                    <div class="play-icon" onclick="runProject('https://prakashkumarmca23.github.io/eyeball/')">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+
+                <div class="card__content">
+                    <span class="card_title">EYE BALL</span>
+                    <p class="card__text">This HTML document creates a simple interactive face with moving eyes that follow the user's mouse cursor.
+                         </p>
+                    <button class="card__btn"><a
+                            href="https://github.com/prakashkumarmca23/eyeball">Code</a></button>
+
+                </div>
+            </div>
+
+            <div class="card swiper-slide reveal">
+                <div class="card__image">
+                    <img src="./img/map3.jpg" alt="" onclick="window.location.href='https://prakashkumarmca23.github.io/map/'">
+                    <div class="play-icon" onclick="runProject('https://prakashkumarmca23.github.io/map/')">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+
+                <div class="card__content">
+                    <span class="card_title">MAP</span>
+                    <p class="card__text">This HTML document displays a map using Mapbox and a button to animate a marker's
+                         movement along predefined bus stops between Gandhipuram and Sulur.</p>
+                    <button class="card__btn"><a
+                            href="https://github.com/prakashkumarmca23/map">Code</a></button>
+
+                </div>
+            </div>
+
+            <div class="card swiper-slide reveal">
+                <div class="card__image">
+                    <img src="img/towersofhanoi-fotor-2023101475957.jpg" alt="" onclick="window.location.href='https://prakashkumarmca23.github.io/honaiTower/'">
+                    <div class="play-icon" onclick="runProject('https://prakashkumarmca23.github.io/honaiTower/')">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+
+                <div class="card__content">
+                    <span class="card_title">HONAI TOWER</span>
+                    <p class="card__text">This project is a simple web-based implementation of the classic Towers of Hanoi puzzle,
+                         showcasing the recursive movement of disks across three pegs.</p>
+                    <button class="card__btn"><a
+                            href="https://github.com/prakashkumarmca23/honaiTower">Code</a></button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact">
+        <form id="contact-form">
+            <input type="text" name="user_name" placeholder="Your Name" required><br>
+            <input type="email" name="user_email" placeholder="Your Email" required><br>
+            <textarea name="message" placeholder="Your Message" required></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+   
+    </section>
+    <footer class="footer">
+                <div class="footer-icons">
+                    <a href="https://www.google.com/maps/search/?api=1&query=11.146059,77.319465"><i class="fas fa-map-marker"></i></a>
+                    <a href="https://www.linkedin.com/in/prakash-kumar-0081a6259"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/prakashkumarmca23"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100026902673080"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/prakash_phoneix?t=49N9GjKRwz8zte-FxhN7fA&s=09"><i class="fab fa-twitter"></i></a>
+                    
+                </div>
+            
+                <div class="footer-text">
+                <p>&copy; 2023 Your Prakash. All Rights Reserved.</p>
+                </div>
+    </footer>
+    
+      
+      
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('eANqE68SXRFYj7ku7'); 
+        })();
+     </script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            emailjs.sendForm('service_1f3jw6u', 'template_oagu7l2', this)
+                .then(function () {
+                    alert('Your message has been sent successfully!');
+                }, function (error) {
+                    alert('Oops... ' + JSON.stringify(error));
+                });
+        });
+    </script>
+
+</body>
+
+</html>
